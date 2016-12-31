@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<link rel="stylesheet" type="text/css" href="font/demo-files/demo.css"/>
+		<link rel="stylesheet" type="text/css" href="font/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="src/dialog/demo.css"/>
+	</head>
+	<body>
+		<header id="head">
+			<h1 class="title">妙味云盘</h1>
+			<div id="overTimeAlert"></div>
+			<div id="delateSuccess"></div>
+			<div id="choiceFiles"></div>
+			<div id="creatSuccess">新建成功</div>
+			<div id="faild">新建失败</div>
+			<div id="faildName">请重新命名</div>
+			<div class="full-tip-box">
+				<span class="text"></span>
+			</div>
+			<div class="head_right">
+				<a href="#">
+					<img src="img/user_img.png"/>
+					<span></span>
+				</a>
+				<a href="#"></a>
+			</div>
+		</header>
+		<nav id="nav">
+			<div id="nav_left">
+				<a href="#">下载</a>
+				<a href="#">分享</a>
+				<a href="#" id="moveTo">移动到</a>
+				<a href="#" id="reName">重命名</a>
+				<a href="#" id="delate">删除</a>
+				<a href="#" id="newFloder">新建文件夹</a>
+				<a href="#"></a>
+			</div>
+			<div id="nav_right">
+				<a href="#"></a><a href="#"><span></span></a>
+				<ul id="sort">
+					<li>按时间排序</li>
+					<li>按字母排序</li>
+					<li>显示缩略图</li>
+				</ul>
+			</div>
+		</nav>
+		<section id="content" class="clear">
+				<div id="content_left"><!--//左边的文件夹生成-->
+				</div>
+			<div id="content_right">
+				
+				<div id="classNav">
+					<span id="checkAll"></span>
+					<!--<a href="#">js基础课程</a>
+					<a href="#">css课程</a>-->
+				</div>
+				<div id="contentBox">
+						<!--缩略图-->
+					<ul id="classFloder">
+						
+							
+					</ul>
+					<!--列表图-->
+					<ul id="list">
+						
+					</ul>	
+				</div>
+				
+				<div id="none"></div>
+			</div>
+		</section>
+		<!--确定删除取消弹框-->
+		<div id="alertdelated">
+			<em>×</em>
+			<p>确定要删除这个文件夹吗？</p>
+			<p>已删除的文件可以在回收站找到</p>
+			<div>
+				<a href="#" id="ensure">确定</a><a href="#" id="remove">取消</a>
+			</div>
+		</div>
+		<div id="delating">正在删除0/15</div>
+		<div id="choiceFloder">
+			<h5>选择储存位置</h5>
+			<em id="close">×</em>
+			<span id='choiceTitle'>
+				<img src="img/choice.png" alt="" />
+				<i>js基础课程</i>
+			</span>
+			<div id="choiceContent"></div>
+			<p>
+				<a href="#" id="sure">确定</a><a href="#" id="cancel">取消</a>
+			</p>
+		</div>
+		<script src="js/Data.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/creatTree.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/eventFunction.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="src/dialog/dialog.js" type="text/javascript" charset="utf-8"></script>
+		
+	</body>
+</html>
